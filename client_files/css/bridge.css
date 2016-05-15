@@ -1,0 +1,286 @@
+/* ==styles listed below are for temporary bridge styling  */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	letter-spacing: 0;
+	line-height: 1.15;
+}
+h1 {
+	margin-top: 10px !important;
+}
+.c-wrap {
+	margin: 0 auto;
+	max-width: 1024px;
+}
+
+
+.row.switchboard, #promosResWrap .row {
+	margin: 0 auto !important;
+	clear: inherit !important;
+	display: : inherit !important;
+	float: none !important;
+	position: relative !important;
+}
+.pager .previous>a, 
+.pager .previous>span,
+.pager .next>a, 
+.pager .next>span {
+	float: inherit;
+}
+.input-group-addon:not(:first-child):not(:last-child), 
+.input-group-btn:not(:first-child):not(:last-child), 
+.input-group .form-control:not(:first-child):not(:last-child) {
+	border-radius: 4px;
+}
+#content .btn {
+	font-size: 11px;
+	margin: 2px;
+	padding: 4px 0;	
+}
+form[name="test"] input[type="submit"], 
+.software_download form input[type="submit"] {
+    color: #fff;
+}
+#userProfile .glyphicon {
+    margin-right: 5px;
+}
+#pageEssentials, #header, #footer, #promoResWrap {
+	margin: 0 auto;
+	width: 100%;
+	clear: both;
+}
+#pageEssentials {
+	max-width: 950px;
+	/* padding-top: 9px;
+	margin-bottom: 15px;*/
+	height: auto;
+}
+#header {
+	color: inherit;
+	height: auto !important;
+	margin-top: 0;
+	z-index: inherit !important;
+}
+#brandBar,
+#footer  {
+	max-width: 1024px;
+}
+#footer {
+	height: auto;
+	margin: 20px auto;
+	min-height: 195px;
+}
+#footer ul.links {
+	width: 100%;
+}
+#footer ul.links li {
+	margin-right: 0; 
+}
+#footer #locationSwitcher {
+	max-width: 600px;
+}
+#footer #copyright {
+	padding-right: 15px;
+}
+#selectOS {
+	max-width: 220px;
+}
+#download_selection #dd3 {
+	margin-right: 0;
+}
+#download_selection .select-target.select-theme-chosen {
+	width: 100%;
+}
+#download_selection input[type="radio"], 
+#download_selection input[type="checkbox"] {
+	margin: 4px 5px 0;
+}
+/* ==promos section */
+#promoResCopy h3 {
+	font-size: 16px;
+}
+#promoResCopy h3 {
+	font-size: 12px;
+}
+#promoResCopy p {
+	font-size: 16px;
+	font-weight: normal;
+}
+#promosResWrap .promoRes.col-md-4 img {
+	max-width: 210px;
+}
+
+/* ==componenet styles */
+ul.modelList {
+	padding: 0;
+	margin: 0;
+} 
+table.col5 td, table.col5  th {
+	padding-right: 20px !important;
+}
+.product {
+	min-height: inherit;
+}
+.location h3 {
+	padding-bottom: 0;
+	margin-bottom: 5px;
+	border-bottom: none; 
+	font-weight: normal; 
+}
+.cookie-notice .c-wrap {
+	padding:0 15px;
+}
+.homepage #header { height: auto;}
+
+/* ==promotions */
+.fixedBack #container {
+	margin: 5% auto;
+	width: 1024px;
+}
+.fixedBack #footer {
+	max-width: 995px;
+	width: 100%;
+	height: auto;
+	margin: 20px auto;
+}
+.fixedBack #footer ul.links  {
+	width:995px;
+	max-width: 100%;
+}
+.fixedBack #footer ul.links li {
+	margin-right: 0;
+}
+.fixedBack #locationSwitcher {
+	margin-left: 0;
+}
+#locationSwitcher {
+	padding-left: 20px;
+}
+#locationSwitcher img{
+	margin-left: 15px;
+}
+#modelListContainer table {
+	margin: auto;
+}
+#modelListContainer td {
+	padding-top: 15px;
+	padding-bottom: 20px;
+}
+#SearchArea a.visited,
+SearchArea a:hover{text-decoration:underline}
+
+#gigya > .row > h5 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	line-height: 1.1;
+	letter-spacing: .03em;
+	font-size: 14px;
+}
+
+/* ==product listing page production */
+body.subcategory #content {
+	z-index: 1000;
+}
+.scrollArea .scroll ul {
+	max-width: 1024px !important;
+	width: 100% !important;
+}
+.compHighImg {
+	width: 300px;
+}
+.listing_image img {
+	width: 270px;
+}
+.scrollArea .compareLink.errorMessage, 
+.scrollArea .compareLink.errorMessage:hover {
+	max-width: 90%;
+}
+
+/* ==homepage */
+.homepage #bannerArea h2 {
+	margin: 0;
+}
+.homepage .banner-inner p {
+	margin: 7px 0;
+}
+.homepage #locationSwitcher img {
+	margin: 2px 10px 0 0;
+}
+
+/* ==business page fix */
+#locationSwitcher span.bizCountry {
+    display: block;
+}
+
+
+/* ==magnific popup */
+.mfp-bg {
+	z-index: 9000;
+}
+.mfp-wrap {
+	z-index: 10000;
+}
+
+/* ==selectjs */
+li.select-option {
+    background: none;
+}
+.sortOptions {
+    text-align: left !important;
+}
+.select-target.select-theme-chosen {
+    float: left;
+    line-height: 18px;
+}
+.sortOptions a.select-target.select-theme-chosen {
+    float: right;
+}
+.select-options li {
+    font-size: 11px;
+}
+#overviewContent .primary li {
+    background-image: none !important;
+}
+#sortOptions {
+	height: 21px;
+}
+#sortOptions.select-select, 
+#sortOptions.select-select option {
+	display: none;
+}
+
+
+
+/* ==support page fixes
+	delete once new support site is up */
+.support #pageEssentials li a {
+	font-size: 12px;
+	color: #999;
+	height: auto!important;
+}
+
+
+/* subnav */
+.subnav > ul > li {
+	display: inline-block;
+	background: none;
+}
+#headline .subnav li a.active {
+	padding: 8px 10px;
+}
+
+@media only screen and (max-width: 1020px) {
+	.fixedBack .c-wrap {
+		margin: 0 15px;
+	}
+}
+@media only screen and (max-width: 991px) {
+	#locationSwitcher a{
+	    display: block;
+	    margin: 5px 0;
+	}
+	#locationSwitcher img{
+	    margin-top: 2px;
+	}
+	#locationSwitcher form {
+		margin-left: 0;
+	}
+}

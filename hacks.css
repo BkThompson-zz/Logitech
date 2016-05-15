@@ -1,0 +1,8 @@
+/* hacks.css - bw fixes */
+
+
+
+/*WEBSUPPORT-101095*/
+.view-bw-rotating-content .views-field-teaser p {
+	font-size:18px;
+}

@@ -1,0 +1,37 @@
+name = LOGITECH 2015 Redesign Theme
+
+description = Use this as a starting point for a new subtheme.
+
+base theme = odyssey_base
+
+core = 6.x
+
+engine = phptemplate
+
+;stylesheets[all][] = style.css
+;stylesheets[all][] = logitech_style.css
+;stylesheets[all][] = client_files/css/global-nav.css
+;stylesheets[all][] = client_files/css/bridge.css
+;stylesheets[all][] = client_files/css/logiBase.css
+;stylesheets[all][] = client_files/css/overrides.css
+;stylesheets[all][] = client_files/css/template.css
+
+
+scripts[] = client_files/js/jquery_page_layout.js
+scripts[] = client_files/js/jquery-1.6.4.js
+scripts[] = client_files/js/bw_custom.js
+
+; Toggle these theme features. See http://drupal.org/node/171205
+features[] = logo
+features[] = favicon
+features[] = primary_links
+ 
+; These last two disabled by redefining the
+; above defaults with only the needed features.
+; features[] = name
+; features[] = search
+; features[] = secondary_links
+; features[] = slogan
+; features[] = mission
+; features[] = node_user_picture
+; features[] = comment_user_picture

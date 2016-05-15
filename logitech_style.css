@@ -1,0 +1,735 @@
+
+/* PROD CSS CHANGES 1/5/2015 */
+
+
+.not-logged-in #bw-user-nav {
+display: none !important;
+}
+
+
+
+body.one-sidebar #bw-content-content {
+  clear: none;
+  float: left;
+  width: 100%;
+}
+
+
+.page-newsroom-home  .pane-7 h1 {
+
+display:none;
+
+}
+
+
+
+.page-newsroom-home  .pane-bw-rotating-content-panel-pane-21 h2 {
+
+display: none;
+}
+
+
+
+
+.page-newsroom-home  .mini-panel-media_resources_sidebar-1 .bw-user-links-list {
+
+
+display: none;
+
+}
+
+
+.page-newsroom-home .pane-bw-rotating-content-panel-pane-21 .view-bw-rotating-content {
+
+border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 25px;
+
+}
+
+
+ .page-newsroom-home #panels-ipe-paneid-32  .pane-1 {
+     border-bottom: 1px solid #e5e5e5 !important;
+}
+
+
+.page-newsroom-home .pane-1 .more-link {
+  border-bottom: none;
+  margin-right: 60px !important;
+}
+
+
+
+
+.page-newsroom-home .pane-bw-press-release-panel-pane-8 .view-bw-press-release {
+     border-bottom: 1px solid #e5e5e5 !important;
+    padding-bottom: 10px;
+}
+
+
+.page-press-releases .pane-1 h2 {
+
+display: none;
+}
+
+
+/* QA PROD CSS */
+
+#bw-content {
+     width: 1024px ! important;
+  margin: 0 auto !important;
+}
+
+
+/* LINKS */
+
+a {
+  color: #0088cc;
+  text-decoration: none;
+  transition: color 0.15s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+} 
+
+/* BANNER IMAGE HOME */
+
+
+.mini-panel-logitech_header .pane-8 img {
+     display: none;
+}
+
+
+.page-newsroom-home  .mini-panel-logitech_header img {
+    display: none;
+   /* margin-left: auto;
+    margin-right: auto; */
+      
+  }
+
+
+.page-press-releases .mini-panel-logitech_header img,  .page-events .mini-panel-logitech_header img, .page-in-the-news .mini-panel-logitech_header img, .page-advsearch .mini-panel-logitech_header img, .page-media-contacts .mini-panel-logitech_header img, .page-rss .mini-panel-logitech_header img, .page-user .mini-panel-logitech_header img {
+
+  display: none;
+}
+
+
+.page-press-releases .breadcrumb, .page-events .breadcrumb, .page-in-the-news .breadcrumb, .page-advsearch .breadcrumb, .page-media-contacts .breadcrumb, .page-rss .breadcrumb, .page-user .breadcrumb {
+     display: none;
+}
+
+
+
+
+
+
+.not-logged-in .mini-panel-logitech_header  img {
+     display: none;
+}
+
+.not-logged-in .breadcrumb {
+     display: none;
+}
+
+
+
+
+
+
+
+/* IPE CHANGE - SAVE/ CANCEL */
+
+#panels-ipe-edit-control-form  input[type="submit"] {
+  width: auto;
+}
+
+
+/* BLACK HORIZ BAR - NAV */
+
+body div.global-nav div.background div.primary-bar {
+ /*  background: linear-gradient(to bottom, rgba(234, 234, 234, 0) 0%, #000 5%, #000 100%) repeat scroll 0 0 rgba(0, 0, 0, 0); */
+  height: 34px;
+  position: absolute;
+  width: 100%;
+  
+}
+
+/*
+body div.global-nav div.background div.primary-bar {
+  background: linear-gradient(to bottom, rgba(234, 234, 234, 0) 0%, #e9e9e9 5%, #d1d1d1 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+  height: 34px;
+  position: absolute;
+  width: 100%;
+  
+}
+
+*/
+
+
+#rotatingBanner h2 {
+
+  font-weight: normal !important;
+  font-size: 24px !important;
+
+}
+
+
+.page-newsroom-home .blogLogi {
+    border-bottom: 1px solid #e5e5e5 ! important;
+    padding-bottom: 10px
+}
+
+
+
+.page-newsroom-home .more-link {
+
+  border-bottom: 1px solid #e5e5e5;
+
+}
+
+/* NAVIGATION */
+
+body ul.primary li a {
+  background-color: transparent;
+  border-style: none;
+  border-color: #bbb;
+  border-width: 1px;
+  height: auto;
+  padding: 0 1em;
+  text-decoration: none;
+}
+
+
+
+body ul.primary {
+  border-bottom: none;
+  border-collapse: collapse;
+  height: auto;
+  line-height: normal;
+  list-style: none outside none;
+  margin: 5px;
+  padding: 0 0 0 1em;
+  white-space: nowrap;
+}
+
+
+body ul.primary li a:hover {
+  background-color: transparent;
+  border-color: none;
+}
+
+
+
+body table {
+  border-left: none;
+  border-top: none;
+}
+
+
+body table {
+  border-collapse: separate;
+
+}
+
+
+
+
+/* NAVIGATION - ADDITONAL INFORMATION */ 
+
+
+.pane-menu-menu-additional-information li.first {
+     background: none repeat scroll 0px center transparent;
+     color: #000000;
+     font-size: 15px;
+     font-weight: bold;
+}
+
+.pane-menu-menu-additional-information ul.menu {
+     padding-left: 0px;
+}
+
+.pane-menu-menu-additional-information ul.menu li.leaf {
+     list-style-image: none;
+     list-style-type: none;
+     margin: 0px;
+     padding: 0.2em 0.5em 0px 0px;
+}
+
+.pane-menu-menu-additional-information a {
+     background: url("client_files/images/icon-arrow-right.png") no-repeat scroll right 0.35em rgba(0, 0, 0, 0) ! important;
+     font-size: 12px ! important;
+     padding-right: 9px ! important;
+}
+
+.pane-menu-menu-additional-information ul.menu li.first a {
+     padding-right: 9px ! important;
+  background: none !important
+}
+
+
+/* NAVIGATION - ADDITONAL INFORMATION - NOT NEWSROOM HOME */ 
+
+#block-menu-menu-additional-information a {
+     background: url("client_files/images/icon-arrow-right.png") no-repeat scroll right 0.35em rgba(0, 0, 0, 0) ! important;
+     font-size: 12px ! important;
+     padding-right: 9px ! important;
+}
+
+#block-menu-menu-additional-information li.first a {
+     background: none repeat scroll 0px center transparent !important;
+     color: #000000 ! important;
+     font-size: 15px;
+     font-weight: bold;
+}
+
+#block-menu-menu-additional-information ul.menu {
+     padding-left: 0px;
+}
+
+#block-menu-menu-additional-information ul.menu li.leaf  {
+     list-style-image: none !important;
+     list-style-type: none !important;
+     margin: 0px;
+     padding: 0.2em 0.5em 0px 0px;
+}
+
+
+/* NAVIGATION - SECONDARY NAV - SUBNAV */ 
+
+#headline ul.nav li:first-child {
+     border-left: medium none;
+}
+
+#headline ul.nav li {
+     border-left: 1px solid #e7e7e7;
+     border-right: 1px solid #d4d4d4;
+     display: block;
+     height: 30px;
+}
+
+#headline ul.nav li + li + li + li + li+ li + li + li  {
+    
+     border-right: none;
+    
+}
+
+
+
+/* ROTATING BANNER */ 
+
+.page-newsroom-home .view-bw-rotating-content .view-content .item-list ul {
+  border: none;
+  
+}
+
+/*
+.page-newsroom-home .bw-main-content .panel-pane {
+  border-bottom: none;
+}
+*/
+
+.page-newsroom-home .view-content .item-list ul li {
+  border-bottom: none;
+
+}
+
+.page-newsroom-home .view-bw-rotating-content .item-list .views-row-1 {
+     margin-top: 10px;
+}
+
+#rotatingBanner h2.pane-title {
+     display: none;
+}
+
+
+.page-newsroom-home .view-bw-rotating-content .item-list .view-inner-wrapper .views-field-field-image-image-fid {
+     
+     margin-top: 0px;
+}
+
+
+.page-newsroom-home .bw-rotating-content-pane .views-field-title span.field-content a {
+display: none;
+
+}
+
+
+.page-newsroom-home .view-bw-rotating-content .item-list .view-inner-wrapper .bannerFont {
+     
+      font-size: 18px;
+}
+
+
+.page-newsroom-home .rotating-content-pager {
+  margin-top: 300px;
+  position: absolute;
+  right: 0;
+  top: 5px;
+  z-index: 50;
+}
+
+.page-newsroom-home #rotatingBanner .view-bw-rotating-content .item-list ul {
+
+
+  position: initial !important;
+
+}
+
+
+.page-newsroom-home #rotatingBanner .view-bw-rotating-content {
+     border-bottom: 1px solid #e5e5e5;
+}
+
+.page-newsroom-home #rotatingBanner .view-bw-rotating-content .item-list ul {
+  height: 340px !important;
+}
+
+.page-newsroom-home .newsLogi .pane-content .more-link {
+     border-bottom: 1px solid #e5e5e5;
+}
+
+
+
+.page-newsroom-home .rotating-content-pager .activeSlide {
+     background: url("client_files/images/activeSlide.jpg") no-repeat scroll 0px 0px transparent;
+     border-radius: 0px;
+     color: #4984be;
+     height: 18px;
+     width: 18px;
+}
+
+.page-newsroom-home .rotating-content-pager a{
+     background: url("client_files/images/non-active-slidebox.jpg") no-repeat scroll 0px 0px transparent;
+     border-radius: 0px;
+     color: #e5e5e5;
+     height: 18px;
+     width: 18px;
+}
+
+
+
+
+
+/* BLOGS POST SECTION */ 
+
+.blogLogi tr td + td {
+     padding-left: 80px;
+}
+
+
+/* IN THE NEWS SECTION */
+
+.newsLogi tr td + td {
+     padding-left: 65px;
+}
+
+.reviewText p {
+     padding-top: 10px;
+}
+
+.page-newsroom-home .more-link a {
+     color: #0088cc !important;
+}
+
+
+
+
+/* VIDEOS */
+
+.page-newsroom-home .bw-main-content .pane-youtube-video-bar #bw-youtube-item0 {
+     float: left;
+     width: 39%;
+}
+
+.page-newsroom-home .bw-main-content .pane-youtube-video-bar #bw-youtube-item1 {
+     float: left;
+     margin-left: 20px;
+     width: 39%;
+}
+
+.page-newsroom-home .bw-main-content .pane-youtube-video-bar #bw-youtube-item3 {
+     float: left;
+     margin-right: 20px;
+     width: 39%;
+}
+
+.page-newsroom-home .bw-main-content .pane-youtube-video-bar .bw-youtube-item-title {
+     display: inherit;
+  
+}
+
+
+
+/* SEARCH FORM - RIGHT SIDE BAR */
+
+#edit-search-block-form-1 {
+     height: 19px;
+}
+
+
+.not-logged-in #edit-search-block-form-1 {
+     height: 19px;
+}
+
+.not-logged-in #search-block-form #edit-submit-1 {
+     background: url("client_files/images/searchbar_long.gif") no-repeat scroll 0px 0px transparent;
+     color: #ffffff;
+     cursor: pointer;
+     width: 57px;
+}
+
+
+
+/* PRESS RELEASE PAGE */
+
+.page-press-releases .pane-menu-menu-release-by-year-menu ul.menu {
+  padding-left: 0px;
+
+}
+
+
+.node-type-press-release .mini-panel-logitech_header img {
+  display: none;
+}
+
+
+.node-type-press-release .breadcrumb {
+  display: none;
+}
+
+
+
+/* ADDITONAL SIDEBARS (BLOCKS/ MINI-PANELS) ON ALL PAGES EXCEPT NEWSROOM HOME. */
+
+
+#block-panels_mini-social_media_sidebar h2 {
+  border-bottom: 1px solid #cccccc !important;
+  font-size: 15px !important;
+  font-weight: normal;
+  margin: 0 0 5px !important;
+  padding: 0 0 5px !important;
+}
+
+.page-press-releases #block-menu-primary-links li.first a {
+  
+  font-weight: normal;
+}
+
+
+
+#block-panels_mini-media_resources_sidebar p {
+  display: none;
+}
+
+
+#block-menu-menu-additional-information ul.menu {
+  padding-left: 0;
+  padding-bottom: 15px;
+}
+
+
+
+.page-user #search-block-form #edit-submit-1 {
+     background: url("client_files/images/searchbar_long.gif") no-repeat scroll 0px 0px transparent;
+     color: #ffffff !important;
+     cursor: pointer !important;
+     width: 57px !important;
+}
+
+
+
+#block-views-tweets-block ul.pager {
+  display: none;
+
+}
+
+
+
+#block-views-tweets-block .more-link {
+
+display: none;
+
+}
+
+
+#block-views-tweets-block h2 {
+  border-bottom: 1px solid #cccccc !important;
+  margin: 0 0 px !important;
+  padding: 0 0 5px !important;
+}
+
+
+#block-views-tweets-block .view-content .item-list ul  {
+ 
+  padding: 0px;
+ 
+}
+
+
+#block-views-tweets-block .view-content .item-list ul li {
+ 
+  padding: 0px;
+}
+
+/* BW Wrap */
+
+.page-press-releases .page-user, #bw_tag_wrap {
+
+padding-top: 70px;
+
+}
+
+
+
+/* QA Fixes */
+
+/*
+.secondary ul li + li + li + li,
+.secondary .nav-2 li,
+.secondary .nav-3 li, 
+.secondary .nav-4 li,
+.secondary .nav-5 li + li,
+.secondary .nav-6 li,
+.secondary .nav-7 li + li {
+     border: medium none;
+}
+*/
+
+/* HQSITES-4883 */
+
+.secondary .nav-2 li,
+.secondary .nav-7 li {
+        border-right: 1px solid #cccccc;
+}
+
+.secondary ul li + li + li + li,
+.secondary .nav-2 li + li,
+.secondary .nav-3 li + li,
+.secondary .nav-4 li,
+.secondary .nav-5 li,
+.secondary .nav-6 li,
+.secondary .nav-7 li + li + li + li {
+     border-right: none;
+}
+
+
+/* HQSITES-4884 */
+
+#edit-bw-adv-search-nodetype-wrapper select {
+
+  height: 50px;
+ 
+}
+
+#edit-category-wrapper select {
+
+  height: 50px;
+
+}
+
+
+#ui-datepicker-div select {
+
+  min-width: 0px;
+
+}
+
+
+div.global-nav div.secondary ul li a div.divider {
+     display: none;
+}
+
+.secondary .nav-3 li {
+     border-right: 1px solid #cccccc;
+     display: inline;
+     padding: 0px 1em;
+}
+
+
+
+
+.secondary .nav-3 li + li + li {
+     border-right: none;
+     
+}
+
+
+/* HQSITES-4886 */
+
+
+.multimedia-grid + .multimedia-grid {
+
+margin-left: 40px;
+
+}
+
+
+/* HQSITES-4888 */
+
+.page-rss .bw-rss-feeds tr td {
+     border-bottom: 1px solid #dadada;
+     border-top: medium none;
+}
+
+.page-rss .bw-rss-feeds tr td + td {
+     border-bottom: medium none;
+     border-top: medium none;
+}
+
+/* HQSITES-4898 */
+
+.pane-bw-press-release-panel-pane-1 .view-inner-wrapper, .pane-bw-press-release-panel-pane-2 .view-inner-wrapper, .pane-bw-press-release-panel-pane-7 .view-inner-wrapper, .pane-bw-press-release-panel-pane-17 .view-inner-wrapper {
+  padding-top: 15px !important;
+}
+
+
+.pane-bw-community-panel-pane-1 .view-inner-wrapper, .pane-bw-op-ed-panel-pane-1 .view-inner-wrapper, .pane-bw-news-item-panel-pane-1 .view-inner-wrapper, .pane-bw-press-release-panel-pane-1 .view-inner-wrapper, .pane-bw-press-release-panel-pane-2 .view-inner-wrapper, .pane-bw-press-release-panel-pane-7 .view-inner-wrapper, .pane-bw-press-release-panel-pane-17 .view-inner-wrapper {
+  padding-top: 0;
+  position: relative;
+}
+
+
+.pane-bw-community-panel-pane-1 .view-inner-wrapper, .pane-bw-op-ed-panel-pane-1 .view-inner-wrapper, .pane-bw-news-item-panel-pane-1 .view-inner-wrapper, .pane-bw-press-release-panel-pane-1 .view-inner-wrapper, .pane-bw-press-release-panel-pane-2 .view-inner-wrapper, .pane-bw-press-release-panel-pane-7 .view-inner-wrapper, .pane-bw-press-release-panel-pane-17 .view-inner-wrapper {
+ 
+  padding-left: 0px !important;
+
+}
+
+
+.page-newsroom-home .views-field-field-press-release-image-fid .multimedia-field-filetype-image {
+
+display: none;
+
+}
+
+
+/*HQSITES-5683*/
+.front .pane-custom.pane-1 td {
+  vertical-align:top;
+  padding-right:20px !Important;
+}
+
+.front .pane-custom.pane-1 td img {
+padding-right:0 !Important;
+}
+
+
+/*WEBSUPPORT-98051*/
+ .node-type-press-release #bw-content .pane-field-press-release-self-mult {
+  display:block !Important;
+ }
+ .node-type-press-release #bw-content .multimedia-grid {
+  min-height:auto !Important;
+ }
+ .node-type-press-release #bw-content .multimedia-grid + .multimedia-grid {
+  margin-left:0 !Important;
+}
+
+
+/* WEBSUPPORT-107284 */
+.navLogo img.logo, .navLogo img.logo-mobile {
+  margin-top: 20px;
+}
+
+
+
+
+
+
+

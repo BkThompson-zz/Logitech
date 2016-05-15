@@ -1,0 +1,909 @@
+/* 
+	Logitech CSS declarations - IE Fixes 
+	copyright Logitech 2009 
+*/
+
+/* TOC 
+	 1. Global Fixes 
+	 2. Header Elements
+	 3. Navigation Elements
+	 4. Filter Elements
+	 5. Overlay Elements
+	 6. Draggable Area
+	 7. Promo Area
+	 8. Formulate Layout CSS
+	 9. Formulate Customize CSS
+	10. Scrollbar CSS
+	11. Shadow CSS
+	12. Custom Tooltip
+	13. Overlay Common Elements
+	14. Product Options Overlay
+	15. Print CSS Styles
+*/
+
+
+/* 1. GLOBAL FIXES 
+------------------------------------------------ */
+/* IE 6 Min Width Fix */
+body.IE6MinWidthFix {
+	width: 980px;
+}
+
+* html body.ie6-png-fallback {
+	background: url("client_files/images/bg-body-ie6-png-fallback.png") repeat-x;
+}
+
+/* Inline Block Fix */
+/* Supports IE 6+ */
+/* Via: http://www.ruzee.com/blog/2007/05/align-list-items-horizontally-with-css/ */
+* html .ib-fix li, * html .ib-fix-target {
+	display: inline;
+}
+
+*:first-child + html .ib-fix li, *:first-child + html .ib-fix-target {
+	display: inline;
+}
+
+form input {
+	padding: 0 5px;
+}
+
+.findRetailer .divider .ui-formulate-submit {
+	display: inline;
+}
+
+* html .findRetailer .ui-shadow {
+	margin-left: -25px;
+}
+
+ol {
+	margin-left: 21px;
+	padding: 0;
+}
+
+* html .sIFR-replaced embed {
+	float: none;
+}
+
+a.action {
+	white-space: normal;
+	display: inline-block;
+	background-position: right 0.5em;
+}
+
+#headline {
+	position: relative;
+}
+
+.overlapFix {
+	z-index: 500 !important;
+	height: 1%;
+}
+
+.showOverlay {
+	z-index: 500 !important;
+	height: 1%;
+}
+
+#headline:hover {
+	z-index: 500;
+	height: 1%;
+}
+
+#headline.main,
+#headline.main:hover {
+	height: auto !important;
+	position: static !important;
+	z-index: auto !important;
+}
+
+#promoArea.inactive {
+	position: static;
+}
+
+
+*:first-child + html #promoArea.inactive * {
+	/*position: static;*/
+}
+
+
+/* 2. HEADER ELEMENTS 
+------------------------------------------------ */
+/* IE 6 */
+* html #userInformation form {
+	width: 1%;
+}
+
+* html #userInformation #globalSearch {
+	margin-left: 12px;
+}
+#userInformation a#globalSubmit {
+	width: 21px;
+}
+/* #userInformation #globalSearch {
+	padding-right: 38px;
+	margin: 3px 85px 0px 0px !important;
+	_width: 160px;
+} */
+#userInformation #globalSearch {
+	position: relative;
+	right: 89px;
+	padding: 3px 3px;
+	margin: 4px 0px 0px !important;
+	width: 175px;
+}
+
+/* 3. NAVIGATION ELEMENTS 
+------------------------------------------------ */
+/* IE 6 & 7 */
+#navigation a, #navigation a:hover {
+	zoom: 1;
+}
+
+#navigation ul {
+	background: #282828;
+}
+
+#navigation .ui-shadow ul {
+	background: none;
+}
+
+#navigation .ui-shadow-el {
+	background-image: url("client_files/images/ie-nav-shadow.png");
+}
+
+/* IE 6 */
+* html #navigation ul ul {
+	width: 188px;
+}
+
+*:first-child + html #navigation ul ul, *:first-child + html #navigation li .ui-shadow-content {
+	width: auto;
+	min-width: 188px;
+}
+
+#navigation li.hover li.active a {
+	display: inline-block;
+}
+
+* html #navigation .ui-shadow-el {
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="client_files/images/ie-nav-shadow.png", sizingMethod="scale");
+}
+
+
+/* 3.5. SUBNAVIGATION ELEMENTS
+------------------------------------------------ */
+
+* html ul#subnavigation {
+	width: 700px;
+}
+
+ul#subnavigation li {
+	display: inline;
+}
+
+* html #subnavigation li.expandable {
+	margin-bottom: 1px;
+	padding-bottom: 0;
+}
+
+/* IE 7 */
+
+.article .feature { /* WOR 21225 */
+	float: none !important;
+	display: block;
+	position: relative;
+	margin: 20px 0 20px !important;
+	overflow: hidden;
+}  
+.article .feature img { /* WOR 21225 */
+	padding: 0 15px 20px 0 !important;
+}
+.article .highlight { /* WOR 21225 */
+	display: block !important;
+	float: none !important;
+	padding: 15px 0 !important;
+	position: relative !important;
+}
+
+.search #content { /* WOR 19916 */
+	position: relative;
+	margin-bottom: 10px;
+	padding-bottom: 0px;
+}
+.search #footer {/* WOR 19916 */
+	margin-top: -30px;
+	padding-top: 0px;
+}
+
+#subnavigation,
+*:first-child + html #subnavigation a,
+#subnavigation a span {
+	zoom: 1;
+}
+
+#subnavigation li.expandable {
+	zoom: 1;
+}
+
+#subnavigation li.expandable ul {
+	background: #000;
+	zoom: 1;
+}
+
+#subnavigation li.expandable .ui-shadow ul {
+	background: transparent;
+}
+
+*:first-child + html #subnavigation .ui-shadow-el {
+	background-image: url("client_files/images/ie-nav-shadow.png");
+}
+
+#subnavigation li {
+	z-index: 50;
+}
+
+#subnavigation li.expandable {
+	z-index: 60;
+}
+
+#subnavigation li.expandable:hover,
+#subnavigation li.expandable.hoverFix {
+	z-index: 100;
+}
+
+#subnavigation li.expandable.hoverFix {
+	z-index: 100;
+}
+
+#subnavigation li.expandable.hoverFix a {
+	z-index: 120;
+}
+
+* html #subnavigation li.hoverFix a span {
+	color: #fff;
+}
+
+*:first-child + html #subnavigation li.expandable .ui-shadow {
+	z-index: 100 !important;
+}
+
+/* IE 6 -- Lots of work here */
+* html #subnavigation li.expandable a span span {
+	margin: 3px 0 0;
+}
+
+* html #subnavigation li ul {
+	width: 100%;
+	padding-bottom: 0;
+	z-index: 60;
+}
+
+* html #subnavigation .ui-shadow-el {
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="client_files/images/ie-nav-shadow.png", sizingMethod="scale");
+}
+
+* html #subnavigation li.hoverFix .shim {
+	/* width comes from javascript */
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -22px;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="client_files/images/bg_subnav.png", sizingMethod="crop");
+	z-index: 1000;
+}
+
+* html #subnavigation li.hoverFix .capShim {
+	position: absolute;
+	top: 0;
+	/* left comes from javascript */
+	width: 38px;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="client_files/images/bg_subnav_cap.png", sizingMethod="crop");
+	z-index: 1000;
+}
+
+* html #subnavigation li.hoverFix a:hover {
+	color: #fff;
+	z-index: 1001;
+}
+
+* html #subnavigation li.hoverFix a.active {
+	color: #fff;
+}
+
+* html #subnavigation li a span span {
+	z-index: 1002;
+	zoom: 1;
+	background-image: url("client_files/images/subnav_carat_ie.png") !important;
+}
+
+* html #subnavigation li a.active span span {
+	background-image: url("client_files/images/subnav_carat_ie.png") !important;
+	background-position: right -52px;
+}
+
+* html #subnavigation li.hoverFix a span span,
+* html #subnavigation li.hoverFix a.active span span,
+* html #subnavigation li.hoverFix a.active:hover span span {
+	background-image: url("client_files/images/subnav_carat_ie.png") !important;
+	background-position: right -22px;
+}
+
+* html #subnavigation li ul a {
+	height: 0;
+	color: #00bebe;
+}
+
+* html #subnavigation li ul a:hover {
+	color: #fff;
+}
+
+/* 4. HEADLINE ELEMENTS 
+------------------------------------------------ */
+* html #headline {
+/*	zoom: 1;*/
+}
+
+*:first-child + html input#retailer {
+	width: 205px;
+}
+
+/* 0. FOOTER ELEMENTS
+------------------------------------------------ */
+#footer {
+	margin-top: 60px;
+}
+
+
+/* 4. FILTER ELEMENTS 
+------------------------------------------------ */
+
+/* IE 6 & 7 */
+.ui-shadow .filterContainer {
+	background: none;
+}
+
+/* For IE VML Corners */
+.filterContainer v\:roundrect {
+	display: none;
+}
+
+/* IE 6 */
+* html .filterContainer .ui-formulate.ui-formulate-reset {
+	padding-left: 12px;
+}
+
+* html .filterContainer li {
+	display: inline-block;
+}
+
+*:first-child + html .filterContainer {
+	top: 178%;
+}
+
+.filterContainer label span {
+	float: left;
+	margin-left: 0px;
+}
+
+form .filterContainer li label {
+	display: inline-block;
+	width: 100%;
+	zoom: 1;
+}
+
+*:first-child + html .sortOptions {
+	width: 300px;
+}
+
+*:first-child + html #sortOptions {
+	width: 130px;
+}
+
+
+/* 5. OVERLAY ELEMENTS 
+------------------------------------------------ */
+
+/* IE 6 & 7 */
+.ui-shadow .overlayContainer {
+	background: none;
+}
+
+
+/* 6. DRAGGABLE AREA 
+------------------------------------------------ */
+
+/* IE 6 & 7 */
+li.ui-draggable .ui-shadow .wrap {
+	background: none !important;
+}
+
+/* IE 6 */
+* html li.ui-draggable {
+	width: 1%;
+	white-space: nowrap;
+}
+
+
+/* 7. PROMO AREA 
+------------------------------------------------ */
+* html #promoArea {
+	zoom: 1;
+}
+
+.promo {
+	margin-bottom: -15px;
+}
+
+.promo {
+	margin-top: -21px;
+}
+
+* html .promo.wide .promoContent {
+	width: 274px;
+}
+
+.promo.image .promoImageArea {
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+
+/* 8. FORMULATE LAYOUT CSS 
+------------------------------------------------ */
+/* IE 6 */
+* html .ui-formulate {
+	display: inline;
+}
+
+/* IE 7 */
+*:first-child + html .ui-formulate {
+	display: inline;
+}
+
+*:first-child + html .ui-formulate-value {
+	width: auto;
+}
+
+* html .ui-formulate-button .ui-formulate-value {
+	padding: 0 0.8em;
+}
+
+
+/* 9. FORMULATE CUSTOMIZE CSS 
+------------------------------------------------ */
+.ui-formulate {
+	zoom: 1;
+}
+
+.ui-formulate-current {
+	zoom: 1;
+}
+
+* html .ui-formulate-current {
+	padding-right: 10px;
+}
+
+*:first-child + html .ui-formulate-current, *:first-child + html .ui-formulate .ui-formulate-value {
+	overflow: visible;
+}
+
+*:first-child + html .ui-formulate-select .ui-formulate-list-wrap {
+	padding-right: 25px;
+}
+
+.ui-formulate-disabled {
+	filter: alpha(opacity=30);
+}
+
+/* IE 6 */
+* html .ui-formulate .dropDownGloss {
+	top: -2px;
+}
+
+/* IE 6 & 7 */
+.ui-formulate-select.ui-formulate-active .ui-formulate-list-wrap {
+	background: none;
+}
+
+/* IE 6 & 7 */
+.ui-formulate-select.ui-formulate-active.alternate-1 .ui-formulate-redraw .ui-formulate-list-wrap,
+.ui-formulate-select.ui-formulate-active.alternate-1 .ui-formulate-wrap:first-child .ui-formulate-list-wrap {
+	background: none;
+}
+
+.ui-formulate-select .ui-formulate-list-wrap .ui-formulate-scroller.ui-formulate-up,
+.ui-formulate-select .ui-formulate-list-wrap .ui-formulate-scroller.ui-formulate-down {
+	background-color: #0d0d0d;
+}
+
+.ui-formulate-select.alternate-1 .ui-formulate-list-wrap .ui-formulate-scroller.ui-formulate-up,
+.ui-formulate-select.alternate-1 .ui-formulate-list-wrap .ui-formulate-scroller.ui-formulate-down {
+	background-color: #fff;
+}
+
+.ui-formulate-select .ui-formulate-wrap, .ui-formulate-select .ui-formulate-list-wrap {
+	border: 0;
+}
+
+/* IE 6 */
+* html .ui-formulate-checkbox {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/images/v2/cmn/form-elements/sprite-checkboxes.png", sizingMethod="crop");
+}
+
+* html .ui-formulate-checkbox-checked {
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/images/v2/cmn/form-elements/ie-checkbox-checked.png", sizingMethod="crop");
+}
+
+/* IE 6 */
+* html .ui-formulate-radio {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/images/v2/cmn/form-elements/sprite-radios.png", sizingMethod="crop");
+}
+
+* html .ui-formulate-radio-checked {
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/images/v2/cmn/form-elements/ie-radio-checked.png", sizingMethod="crop");
+}
+
+.ui-formulate-submit .ui-formulate-wrap, .ui-formulate-reset .ui-formulate-wrap {
+	border-bottom: none;
+}
+
+/* IE 6 & 7 (asterisk hack) */
+.ui-formulate-text input, .ui-formulate-password input {
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+}
+
+* html .ui-formulate-select .ui-shadow.ui-formulate-scrollable .ui-shadow {
+	padding: 0;
+	margin: 0;
+}
+
+*:first-child + html .ui-formulate-select .ui-shadow.ui-formulate-scrollable .ui-shadow-content {
+	padding-bottom: 15px;
+}
+
+/* IE 6 */
+* html .ui-formulate-select .ui-formulate-wrap .ui-shadow-content {
+	height: 100%;
+}
+
+/* IE 6 */
+* html .ui-shadow {
+	overflow: hidden;
+}
+
+* html .ui-shadow-el, * html .alternate-1 .ui-shadow-el {
+	width: 700px;
+	height: 1280px;
+	
+	zoom: 1;
+	
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/images/v2/cmn/shadow/bg-shadow.png", sizingMethod="scale");
+}
+
+* html .alternate-1 .ui-shadow-el {
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/images/v2/cmn/shadow/bg-shadow-alternate.png", sizingMethod="scale");
+}
+
+* html .ui-formulate.alternate-1 .overlayContainer .ui-formulate-value {
+	color: #fff;
+}
+
+* html .ui-formulate.alternate-1 .overlayContainer .alternate-1 .ui-formulate-value {
+	color: #666;
+}
+
+
+/* 10. SCROLLBAR CSS 
+------------------------------------------------ */
+/* IE 6 */
+* html .ui-scrollbar-left .ui-scrollbar-button {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/images/v2/cmn/scrollbar/ie-button-left.png", sizingMethod="scale");
+	cursor: pointer;
+}
+
+* html .ui-scrollbar-right .ui-scrollbar-button {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/images/v2/cmn/scrollbar/ie-button-right.png", sizingMethod="scale");
+	cursor: pointer;
+}
+
+* html .ui-scrollbar-drag {
+	height: 17px !important;
+}
+
+#content .scrollArea .scroll {
+	overflow: hidden;
+	overflow-x: auto;
+}
+
+.scrollArea .compareLink {
+	display: inline;
+}
+
+
+/* 11. SHADOW CSS 
+------------------------------------------------ */
+/* IE 6 */
+
+/* For IE, the container element needs to 'contain' the shadow */
+/* This trick gives us padding to display the shadow, without messing around with layout */
+* html .ui-shadow {
+	padding: 18px 22px 32px 30px;
+	margin: -18px -22px -32px -30px;
+}
+
+* html .ui-shadow-el {
+	zoom: 1;
+	clip: rect(0 0 0 0);
+}
+
+*:first-child + html .ui-shadow-el {
+	background-image: url("/images/v2/cmn/shadow/ie-shadow.png");
+}
+
+*:first-child + html .alternate-1 .ui-shadow-el {
+	background-image: url("/images/v2/cmn/shadow/bg-shadow-alternate.png");
+}
+
+
+* html .ui-shadow-el, * html .alternate-1 .ui-shadow-el {
+	background: none !important;
+	
+	width: 700px;
+	height: 1280px;
+	
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="client_files/images/ie-shadow.png", sizingMethod="scale");
+}
+
+* html .alternate-1 .ui-shadow-el {
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="client_files/images/bg-shadow-alternate.png", sizingMethod="scale");
+}
+
+
+.ui-shadow-bot-left {
+	margin-bottom: -32px;
+	height: 32px;
+}
+
+.ui-shadow-bot-right {
+	margin-bottom: -32px;
+	height: 32px;
+}
+
+
+/* Using clip allows me to use transparent PNG sprites.
+   I'm using expressions because the shadow needs to always be 100% width/height,
+   and percentages are relative to the size of the image, *not* the size of the container.
+
+   All uses of drop shadows will scale, which means flexibility is mandatory.
+   Of course, this means a ton of calculations going on, but I can't see a way around it.
+*/
+* html .ui-shadow .ui-shadow-content {
+	width: expression(function(el) {
+		return el.getElementsByTagName("*")[0].offsetWidth + "px";
+	}(this));
+	
+	height: expression(function(el) {
+		return el.getElementsByTagName("*")[0].offsetHeight + "px";
+	}(this));
+}
+
+* html .ui-shadow-top-left {
+	clip: expression(function(el) {
+		
+		var content = el.parentNode.getElementsByTagName("*")[0],
+		    width = content.offsetWidth,
+		    height = content.offsetHeight;
+		
+		/* Unbelievably... well, unless you've come to expect this from IE 6,
+		   values that end in an odd number make the shadow elements
+		   overlap over each other. Yeah. This is an actual bug.
+		
+		   Let's skip the part where I spent hours tracking it down.
+		
+		   So I have to test to see if the value is divisible by 2, and if not,
+		   I subtract one from the value to make it an even number.
+		
+		   Seriously.
+		*/
+		height -= (height % 2) ? 1 : 0;
+		width -= (width % 2) ? 1 : 0;
+		
+		return 'rect(0 ' + width + 'px ' + height + 'px 0)';
+	}(this));
+}
+
+* html .ui-shadow-top-right {
+	clip: expression(function(el) {
+		
+		var content = el.parentNode.getElementsByTagName("*")[0],
+		    height = content.offsetHeight;
+		
+		height -= (height % 2) ? 1 : 0;
+		
+		return 'rect(0 744px ' + height + ' 678px)';
+	}(this));
+}
+
+* html .ui-shadow-bot-left {
+	padding-left: 0;
+	clip: rect(1248px 44px 1302px 0);
+}
+
+* html .ui-shadow-bot-right {
+	padding-right: 22px;
+	clip: expression(function(el) {
+		
+		var content = el.parentNode.getElementsByTagName("*")[0],
+		    width = (content.offsetWidth);
+		
+		width -= (width % 2) ? 1 : 0;
+		
+		return 'rect(1248px 722px 1302px ' + (722 - width) + 'px)';
+	}(this));
+}
+
+
+/* 12. CUSTOM TOOLTIP
+------------------------------------------------ */
+* html #customToolTip, * html .customToolTip {
+	width: 1%;
+	white-space: nowrap;
+}
+
+* html #customToolTip span,
+* html .customToolTip span {
+	background-image: url("/images/v2/subcategory/ie-tooltip.png");
+}
+
+/* 13. OVERLAY COMMON ELEMENTS
+------------------------------------------------ */
+
+* html .scrim {
+	background: transparent;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="client_files/images/bg-overlay-50.png", sizingMethod="scale");
+}
+
+/* 14. PRODUCT OPTIONS OVERLAY 
+------------------------------------------------ */
+
+.productOptionsOverlay dd {
+	zoom: 1;
+	display: inline !important;
+}
+
+.productOptionsOverlay .content {
+	background-color: transparent !important;
+}
+
+.productOptionsOverlay dd label.selected {
+	border: 0 !important;
+	padding: 1px !important;
+	zoom: 1;
+}
+
+.productOptionsOverlay dd label {
+	float: left;
+}
+
+.productOptionsOverlay dd img {
+	position: relative;
+}
+
+.scrollArea .scroll ul {
+	margin: 35px 0 32px !important; /* top changed from 18px */
+}
+
+
+/* 15. PRINT CSS STYLES
+------------------------------------------------ */
+@media print {
+	
+	body {
+		font-size: 80% !important;
+	}
+
+	#container {
+		width: 100%;
+	}
+
+	v\:* {
+		display: none !important;
+	}
+	
+	#headlineTitle {
+		margin: 0;
+		width: 80%;
+		font-size: 70% !important;
+
+	}
+	
+	#headlinePricing {
+		width: 20%;
+		font-size: 70% !important;
+
+	}
+	
+	#promoArea {
+		display: none !important;
+	}
+	.findRetailer{
+	display: none !important;
+	}
+	.ui-formulate-wrap
+	{
+	display: none !important;
+
+	}
+	
+	.column {
+		float: left;
+	}
+
+	.column.primary {
+		width: 65%;
+	}
+
+	.column.secondary {
+		margin-right: 5%;
+		width: 25%;
+	}
+	
+	#footer {
+		font-size: 100% !important;
+	}
+	
+	#footer ul, #copyright {
+		width: auto !important;
+	}
+	
+	#footer #locationSwitcher {
+		width: 100% !important;
+	}
+	
+	.pngfixed span {
+		display: none !important;
+	}
+	
+	.pnghide {
+		display: block;
+		position: static;
+		left: 0;
+		top: 0;
+		width: auto;
+		height: auto;
+	}
+	
+	.column1,
+	.column2 {
+		width: 50%;
+	}
+	.column2 h2
+	{
+	font-size: 1.5em;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
